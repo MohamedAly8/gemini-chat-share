@@ -55,31 +55,9 @@ There is no telemetry, no analytics, no server, and no third-party scripts.
 
 ---
 
-## Shipping to your team
-
-**Recommended: GitHub Pages**
-
-```bash
-# rename to index.html and push to a repo with Pages enabled
-cp gemini-viewer.html index.html
-git add index.html
-git commit -m "add gemini chat viewer"
-git push
-```
-
-Then enable Pages in the repo: **Settings → Pages → Deploy from branch (main, root)**.
-
-Your team gets a permanent URL with no infrastructure to maintain. Updates are a git push.
-
-**Alternative: shared drive**
-
-Drop `gemini-viewer.html` into any shared drive (Google Drive, Confluence, Notion). Teammates download it once and open it locally. Simple, but no central "latest version".
-
----
-
 ## Contributing
 
-The entire tool is a single file: `gemini-viewer.html`. No build step, no dependencies.
+The entire tool is a single file: `index.html`. No build step, no dependencies.
 
 To extend it — for example to handle a new part type in a future Gemini CLI release — find the `renderChat` function and add a new branch to the `parts.forEach` loop.
 
